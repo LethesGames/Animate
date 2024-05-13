@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3 uid="uid://bd8n6glkhbnkn"]
+
+[ext_resource type="Texture2D" uid="uid://hhs308lunpcu" path="res://assets/sprites/adventurer-v1.5-Sheet.png" id="1_inntb"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_vwqp1"]
+atlas = ExtResource("1_inntb")
+region = Rect2(0, 0, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4p1r4"]
+atlas = ExtResource("1_inntb")
+region = Rect2(50, 0, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mbbp3"]
+atlas = ExtResource("1_inntb")
+region = Rect2(100, 0, 50, 37)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ltjbi"]
+atlas = ExtResource("1_inntb")
+region = Rect2(150, 0, 50, 37)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_wdny5"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_vwqp1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4p1r4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mbbp3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ltjbi")
+}],
+"loop": true,
+"name": &"Idle",
+"speed": 5.0
+}]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ypxk3"]
+radius = 8.0
+height = 26.0
+
+[node name="Player" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_wdny5")
+animation = &"Idle"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-1, 4)
+shape = SubResource("CapsuleShape2D_ypxk3")
