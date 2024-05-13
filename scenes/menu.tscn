@@ -4,7 +4,7 @@
 [ext_resource type="Texture2D" uid="uid://dj3ixude7bm5u" path="res://assets/background/back.png" id="1_ib066"]
 [ext_resource type="Script" path="res://scripts/menu.gd" id="1_moatu"]
 [ext_resource type="FontFile" uid="uid://elwfl1nf2yaw" path="res://assets/fonts/PixelOperator8.ttf" id="2_0iuki"]
-[ext_resource type="Theme" uid="uid://td2pxmjj5ljn" path="res://assets/button_theme.tres" id="4_uyxe1"]
+[ext_resource type="Theme" uid="uid://td2pxmjj5ljn" path="res://assets/themes/button_theme.tres" id="4_uyxe1"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
