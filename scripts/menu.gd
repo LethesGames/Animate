@@ -12,9 +12,8 @@ func _process(delta):
 
 
 func _on_play_button_pressed():
-	print("Pasar a escena xogo")
+	get_tree().change_scene_to_file("res://scenes/game.tscn")
 
 
 func _on_quit_button_pressed():
-	print("Sair")
 	get_tree().quit()
