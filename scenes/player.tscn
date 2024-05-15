@@ -1,6 +1,7 @@
-[gd_scene load_steps=8 format=3 uid="uid://bd8n6glkhbnkn"]
+[gd_scene load_steps=9 format=3 uid="uid://bd8n6glkhbnkn"]
 
 [ext_resource type="Texture2D" uid="uid://hhs308lunpcu" path="res://assets/sprites/adventurer-v1.5-Sheet.png" id="1_inntb"]
+[ext_resource type="Script" path="res://scripts/player.gd" id="1_xg21u"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vwqp1"]
 atlas = ExtResource("1_inntb")
@@ -43,10 +44,13 @@ radius = 8.0
 height = 26.0
 
 [node name="Player" type="CharacterBody2D"]
+z_index = 5
+script = ExtResource("1_xg21u")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_wdny5")
 animation = &"Idle"
+frame_progress = 0.974035
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 4)
