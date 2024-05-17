@@ -17,17 +17,22 @@ script = ExtResource("1_moatu")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 
+[node name="TextureRect" type="TextureRect" parent="CanvasLayer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = ExtResource("1_ib066")
+
 [node name="PanelContainer" type="PanelContainer" parent="CanvasLayer"]
-anchors_preset = 8
-anchor_left = 0.5
-anchor_top = 0.5
-anchor_right = 0.5
-anchor_bottom = 0.5
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 scale = Vector2(3.00667, 2.69869)
-size_flags_horizontal = 4
-size_flags_vertical = 4
 
 [node name="Sprite2D" type="Sprite2D" parent="CanvasLayer/PanelContainer"]
 texture = ExtResource("1_ib066")
