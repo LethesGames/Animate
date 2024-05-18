@@ -1,17 +1,90 @@
-[gd_scene load_steps=14 format=3 uid="uid://bcothi4unxa6n"]
+[gd_scene load_steps=39 format=3 uid="uid://bcothi4unxa6n"]
 
+[ext_resource type="Texture2D" uid="uid://b3r1f1sk120kh" path="res://assets/sprites/run/adventurer-v1.5-Sheet-01-01.png" id="1_36e24"]
 [ext_resource type="Texture2D" uid="uid://ce1mh1tr4qond" path="res://assets/sprites/coin/coin1.png" id="1_o5daj"]
+[ext_resource type="FontFile" uid="uid://elwfl1nf2yaw" path="res://assets/fonts/PixelOperator8.ttf" id="1_ub4pb"]
+[ext_resource type="Texture2D" uid="uid://dprf77tkixv2" path="res://assets/sprites/run/adventurer-v1.5-Sheet-02-01.png" id="2_ay7lm"]
 [ext_resource type="Texture2D" uid="uid://b6s0lb5t6chsw" path="res://assets/sprites/coin/coin2.png" id="2_hrxt5"]
+[ext_resource type="Texture2D" uid="uid://c5xmhg8yfga3j" path="res://assets/sprites/run/adventurer-v1.5-Sheet-03-01.png" id="3_5c12v"]
 [ext_resource type="Texture2D" uid="uid://t055n33r44uu" path="res://assets/sprites/coin/cion11.png" id="3_lyv0v"]
 [ext_resource type="Texture2D" uid="uid://coijjt4v228sc" path="res://assets/sprites/coin/coin12.png" id="4_nfulj"]
+[ext_resource type="Texture2D" uid="uid://c806acbwh87dw" path="res://assets/sprites/run/adventurer-v1.5-Sheet-04-01.png" id="4_qijvo"]
+[ext_resource type="Texture2D" uid="uid://ch8wyo32w14yf" path="res://assets/sprites/run/adventurer-v1.5-Sheet-05-01.png" id="5_d3gvq"]
 [ext_resource type="Texture2D" uid="uid://c8rii0hrnxqpk" path="res://assets/sprites/coin/coin3.png" id="5_erxst"]
 [ext_resource type="Texture2D" uid="uid://ddm5lt78g3qsl" path="res://assets/sprites/coin/coin4.png" id="6_aueyr"]
+[ext_resource type="Texture2D" uid="uid://dviiubowwldil" path="res://assets/sprites/run/adventurer-v1.5-Sheet-06-01.png" id="6_b1mcl"]
 [ext_resource type="Texture2D" uid="uid://d0asswfoelqiy" path="res://assets/sprites/coin/coin5.png" id="7_u71qm"]
 [ext_resource type="Texture2D" uid="uid://c28y2aqdo2we2" path="res://assets/sprites/coin/coin6.png" id="8_01sar"]
+[ext_resource type="Texture2D" uid="uid://d4f7merwm4e2h" path="res://assets/sprites/jump/jump.png" id="8_5nwts"]
 [ext_resource type="Texture2D" uid="uid://c404vlf1hdo6b" path="res://assets/sprites/coin/coin7.png" id="9_mhqul"]
+[ext_resource type="Texture2D" uid="uid://b1fdnd68btmbv" path="res://assets/sprites/jump/jump1.png" id="9_p606h"]
+[ext_resource type="Texture2D" uid="uid://bis4x5uroo6kt" path="res://assets/sprites/jump/jump2.png" id="10_0svuu"]
 [ext_resource type="Texture2D" uid="uid://bmctchy6juf1w" path="res://assets/sprites/coin/coin8.png" id="10_6wx6q"]
 [ext_resource type="Texture2D" uid="uid://by2nuojjeoep3" path="res://assets/sprites/coin/coin9.png" id="11_1ge8g"]
+[ext_resource type="Texture2D" uid="uid://cqo0p7vrtw8bb" path="res://assets/sprites/jump/jump3.png" id="11_jwx71"]
+[ext_resource type="Texture2D" uid="uid://c2im3o70xd8j2" path="res://assets/sprites/jump/jump4.png" id="12_7xutl"]
 [ext_resource type="Texture2D" uid="uid://dxoa7pcilnn53" path="res://assets/sprites/coin/coin10.png" id="12_bdy36"]
+[ext_resource type="Texture2D" uid="uid://yxofd7obmtni" path="res://assets/sprites/jump/jump5.png" id="13_yt1wj"]
+[ext_resource type="Texture2D" uid="uid://cejdjc5skjtt8" path="res://assets/sprites/jump/jump6.png" id="14_u3oq0"]
+[ext_resource type="Texture2D" uid="uid://cfgghgtvk1op5" path="res://assets/sprites/jump/jump7.png" id="15_271vq"]
+[ext_resource type="Texture2D" uid="uid://d0l68uidhumit" path="res://assets/sprites/jump/jump8.png" id="16_y7rxi"]
+[ext_resource type="Texture2D" uid="uid://fp6adtaal0b3" path="res://assets/sprites/jump/jump9.png" id="17_8ry0b"]
+[ext_resource type="Texture2D" uid="uid://gcpp6vym8bl5" path="res://assets/sprites/slide/slide.png" id="18_myfje"]
+[ext_resource type="Texture2D" uid="uid://ceib16nqjw8km" path="res://assets/sprites/slide/slide1.png" id="19_37vm5"]
+[ext_resource type="Texture2D" uid="uid://b32nwlwbooqms" path="res://assets/sprites/slide/slide2.png" id="20_qpthu"]
+[ext_resource type="Texture2D" uid="uid://ovd132a8rjqw" path="res://assets/sprites/slide/slide3.png" id="21_efj8j"]
+[ext_resource type="Texture2D" uid="uid://bg3bks5ckkemd" path="res://assets/sprites/slide/slide4.png" id="22_rfkkd"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_jmp1n"]
+frames = 6
+speed_scale = 8.0
+frame_0/texture = ExtResource("1_36e24")
+frame_1/texture = ExtResource("2_ay7lm")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("3_5c12v")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("4_qijvo")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("5_d3gvq")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("6_b1mcl")
+frame_5/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_ob2fa"]
+frames = 10
+speed_scale = 6.0
+frame_0/texture = ExtResource("8_5nwts")
+frame_1/texture = ExtResource("9_p606h")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("10_0svuu")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("11_jwx71")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("12_7xutl")
+frame_4/duration = 1.0
+frame_5/texture = ExtResource("13_yt1wj")
+frame_5/duration = 1.0
+frame_6/texture = ExtResource("14_u3oq0")
+frame_6/duration = 1.0
+frame_7/texture = ExtResource("15_271vq")
+frame_7/duration = 1.0
+frame_8/texture = ExtResource("16_y7rxi")
+frame_8/duration = 1.0
+frame_9/texture = ExtResource("17_8ry0b")
+frame_9/duration = 1.0
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_dkcuu"]
+frames = 5
+speed_scale = 6.0
+frame_0/texture = ExtResource("18_myfje")
+frame_1/texture = ExtResource("19_37vm5")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("20_qpthu")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("21_efj8j")
+frame_3/duration = 1.0
+frame_4/texture = ExtResource("22_rfkkd")
+frame_4/duration = 1.0
 
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_o0s1v"]
 frames = 12
@@ -45,6 +118,7 @@ frame_11/duration = 1.0
 [node name="MarginContainer" type="MarginContainer" parent="."]
 anchors_preset = 10
 anchor_right = 1.0
+offset_bottom = 158.0
 grow_horizontal = 2
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer"]
@@ -54,37 +128,77 @@ layout_mode = 2
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 40
+
+[node name="AnimationsLabel" type="Label" parent="MarginContainer/HBoxContainer/VBoxContainer/MarginContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_ub4pb")
+theme_override_font_sizes/font_size = 50
 text = "ANIMACIONS"
 
-[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/HBoxContainer/VBoxContainer"]
 layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/margin_left = 60
 
-[node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+[node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer/VBoxContainer/MarginContainer2"]
+modulate = Color(0, 0, 0, 0.176471)
 layout_mode = 2
+size_flags_vertical = 3
 
-[node name="TextureRect2" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+[node name="RunTextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/MarginContainer2/HBoxContainer"]
 layout_mode = 2
+texture = SubResource("AnimatedTexture_jmp1n")
+expand_mode = 3
 
-[node name="TextureRect3" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+[node name="JumpTextureRect2" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/MarginContainer2/HBoxContainer"]
 layout_mode = 2
+texture = SubResource("AnimatedTexture_ob2fa")
+expand_mode = 3
 
-[node name="TextureRect4" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/HBoxContainer"]
+[node name="SlideTextureRect3" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/MarginContainer2/HBoxContainer"]
 layout_mode = 2
+texture = SubResource("AnimatedTexture_dkcuu")
+expand_mode = 3
 
 [node name="HBoxContainer" type="HBoxContainer" parent="MarginContainer/HBoxContainer"]
 layout_mode = 2
-size_flags_vertical = 4
 
 [node name="TextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
 texture = SubResource("AnimatedTexture_o0s1v")
+expand_mode = 3
 
-[node name="Label" type="Label" parent="MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="MarginContainer" type="MarginContainer" parent="MarginContainer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
-text = "1 / 3"
+theme_override_constants/margin_right = 20
 
-[node name="Button" type="Button" parent="MarginContainer/HBoxContainer/HBoxContainer"]
+[node name="CoinLabel" type="Label" parent="MarginContainer/HBoxContainer/HBoxContainer/MarginContainer"]
 layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_ub4pb")
+theme_override_font_sizes/font_size = 50
+text = "0/2"
+
+[node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/HBoxContainer/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 30
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 20
+
+[node name="MenuButton" type="Button" parent="MarginContainer/HBoxContainer/HBoxContainer/MarginContainer2"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
+theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_ub4pb")
+theme_override_font_sizes/font_size = 50
 text = "MENU"

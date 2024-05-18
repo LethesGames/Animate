@@ -50,7 +50,7 @@ script = ExtResource("1_xg21u")
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_wdny5")
 animation = &"Idle"
-frame_progress = 0.974035
+frame_progress = 0.96338
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 4)

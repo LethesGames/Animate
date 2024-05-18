@@ -1,6 +1,7 @@
-[gd_scene load_steps=59 format=3 uid="uid://dhitxuypuig5k"]
+[gd_scene load_steps=60 format=3 uid="uid://dhitxuypuig5k"]
 
 [ext_resource type="Texture2D" uid="uid://bny8wncx5rj8j" path="res://assets/sprites/tileset.png" id="1_4y4og"]
+[ext_resource type="PackedScene" uid="uid://bcothi4unxa6n" path="res://scenes/hud.tscn" id="1_m8ju8"]
 [ext_resource type="PackedScene" uid="uid://bd8n6glkhbnkn" path="res://scenes/player.tscn" id="2_6ttpj"]
 [ext_resource type="Texture2D" uid="uid://cwlvwqrnvhdvn" path="res://assets/sprites/world_tileset.png" id="2_mojwo"]
 [ext_resource type="Texture2D" uid="uid://hhs308lunpcu" path="res://assets/sprites/adventurer-v1.5-Sheet.png" id="4_2cwf1"]
@@ -1251,6 +1252,8 @@ animations = [{
 [sub_resource type="CircleShape2D" id="CircleShape2D_b2vj3"]
 
 [node name="Game" type="Node2D"]
+
+[node name="CanvasLayer" parent="." instance=ExtResource("1_m8ju8")]
 
 [node name="TileMap" type="TileMap" parent="."]
 scale = Vector2(0.981979, 1.0242)
