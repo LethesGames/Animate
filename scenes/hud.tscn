@@ -1,14 +1,18 @@
-[gd_scene load_steps=39 format=3 uid="uid://bcothi4unxa6n"]
+[gd_scene load_steps=44 format=3 uid="uid://bcothi4unxa6n"]
 
 [ext_resource type="Texture2D" uid="uid://b3r1f1sk120kh" path="res://assets/sprites/run/adventurer-v1.5-Sheet-01-01.png" id="1_36e24"]
 [ext_resource type="Texture2D" uid="uid://ce1mh1tr4qond" path="res://assets/sprites/coin/coin1.png" id="1_o5daj"]
 [ext_resource type="FontFile" uid="uid://elwfl1nf2yaw" path="res://assets/fonts/PixelOperator8.ttf" id="1_ub4pb"]
 [ext_resource type="Texture2D" uid="uid://dprf77tkixv2" path="res://assets/sprites/run/adventurer-v1.5-Sheet-02-01.png" id="2_ay7lm"]
 [ext_resource type="Texture2D" uid="uid://b6s0lb5t6chsw" path="res://assets/sprites/coin/coin2.png" id="2_hrxt5"]
+[ext_resource type="Texture2D" uid="uid://c8ser2n6km3iv" path="res://assets/sprites/idle/adventurer-idle-00.png" id="2_ph4a1"]
 [ext_resource type="Texture2D" uid="uid://c5xmhg8yfga3j" path="res://assets/sprites/run/adventurer-v1.5-Sheet-03-01.png" id="3_5c12v"]
 [ext_resource type="Texture2D" uid="uid://t055n33r44uu" path="res://assets/sprites/coin/cion11.png" id="3_lyv0v"]
+[ext_resource type="Texture2D" uid="uid://duncmcjnob5k0" path="res://assets/sprites/idle/adventurer-idle-01.png" id="3_ntmaa"]
+[ext_resource type="Texture2D" uid="uid://ba388da8vpl2c" path="res://assets/sprites/idle/adventurer-idle-02.png" id="4_1086m"]
 [ext_resource type="Texture2D" uid="uid://coijjt4v228sc" path="res://assets/sprites/coin/coin12.png" id="4_nfulj"]
 [ext_resource type="Texture2D" uid="uid://c806acbwh87dw" path="res://assets/sprites/run/adventurer-v1.5-Sheet-04-01.png" id="4_qijvo"]
+[ext_resource type="Texture2D" uid="uid://c0sv5ubue5ahu" path="res://assets/sprites/idle/adventurer-idle-03.png" id="5_8i4i3"]
 [ext_resource type="Texture2D" uid="uid://ch8wyo32w14yf" path="res://assets/sprites/run/adventurer-v1.5-Sheet-05-01.png" id="5_d3gvq"]
 [ext_resource type="Texture2D" uid="uid://c8rii0hrnxqpk" path="res://assets/sprites/coin/coin3.png" id="5_erxst"]
 [ext_resource type="Texture2D" uid="uid://ddm5lt78g3qsl" path="res://assets/sprites/coin/coin4.png" id="6_aueyr"]
@@ -34,6 +38,17 @@
 [ext_resource type="Texture2D" uid="uid://b32nwlwbooqms" path="res://assets/sprites/slide/slide2.png" id="20_qpthu"]
 [ext_resource type="Texture2D" uid="uid://ovd132a8rjqw" path="res://assets/sprites/slide/slide3.png" id="21_efj8j"]
 [ext_resource type="Texture2D" uid="uid://bg3bks5ckkemd" path="res://assets/sprites/slide/slide4.png" id="22_rfkkd"]
+
+[sub_resource type="AnimatedTexture" id="AnimatedTexture_xdive"]
+frames = 4
+speed_scale = 6.0
+frame_0/texture = ExtResource("2_ph4a1")
+frame_1/texture = ExtResource("3_ntmaa")
+frame_1/duration = 1.0
+frame_2/texture = ExtResource("4_1086m")
+frame_2/duration = 1.0
+frame_3/texture = ExtResource("5_8i4i3")
+frame_3/duration = 1.0
 
 [sub_resource type="AnimatedTexture" id="AnimatedTexture_jmp1n"]
 frames = 6
@@ -150,6 +165,11 @@ theme_override_constants/margin_left = 60
 modulate = Color(0, 0, 0, 0.176471)
 layout_mode = 2
 size_flags_vertical = 3
+
+[node name="IdleTextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/MarginContainer2/HBoxContainer"]
+layout_mode = 2
+texture = SubResource("AnimatedTexture_xdive")
+expand_mode = 3
 
 [node name="RunTextureRect" type="TextureRect" parent="MarginContainer/HBoxContainer/VBoxContainer/MarginContainer2/HBoxContainer"]
 layout_mode = 2
