@@ -41,3 +41,13 @@ func _physics_process(delta):
 		velocity.x = move_toward(velocity.x, 0, SPEED)
 
 	move_and_slide()
+
+
+func enable_animation(animation_action:String) -> void:
+	match animation_action:
+		"run":
+			animations_array[1] = 1
+		"jump":
+			animations_array[2] = 1
+		"slide":
+			animations_array[3] = 1
