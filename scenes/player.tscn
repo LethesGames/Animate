@@ -178,7 +178,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"Run",
-"speed": 5.0
+"speed": 10.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -210,10 +210,12 @@ z_index = 5
 floor_max_angle = 0.174533
 floor_snap_length = 3.0
 script = ExtResource("1_xg21u")
+JUMP_VELOCITY = -300.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_wdny5")
 animation = &"Idle"
+frame_progress = 0.0959177
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 4)
