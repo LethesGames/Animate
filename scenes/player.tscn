@@ -153,9 +153,9 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_8ae23")
 }],
-"loop": true,
+"loop": false,
 "name": &"Jump",
-"speed": 5.0
+"speed": 15.0
 }, {
 "frames": [{
 "duration": 1.0,
@@ -214,8 +214,7 @@ JUMP_VELOCITY = -300.0
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_wdny5")
-animation = &"Idle"
-frame_progress = 0.0959177
+animation = &"Jump"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(-1, 4)
