@@ -1,0 +1,114 @@
+{
+	"categories": [
+		{
+			"uuid": "f37dee21-3d7a-4e3c-8e19-12d79112de9e",
+			"title": "Task",
+			"color": "42c2ff"
+		},
+		{
+			"uuid": "68a60e15-e72d-4445-b5f4-302b7b5a1691",
+			"title": "Improvement",
+			"color": "0bcb7f"
+		},
+		{
+			"uuid": "e313cae1-1a8c-4476-a274-62ff52a1e0ec",
+			"title": "Bug",
+			"color": "e7400d"
+		}
+	],
+	"stages": [
+		{
+			"uuid": "ffab83f9-c379-49f9-8f63-a4690a2b0aaa",
+			"title": "Todo",
+			"tasks": [
+				"e1525fa8-d7cc-43b3-bf1f-f4db93907969",
+				"e44e9a32-ba42-47a1-b589-f6edf0008dff",
+				"e73691e2-3b74-4d55-b6ef-7c5ae38a5d44",
+				"d1d22c4d-93b9-4f24-864c-a3d062617f27"
+			]
+		},
+		{
+			"uuid": "cfe0587e-b705-40cc-93ee-00f3c2b8ab8b",
+			"title": "Doing",
+			"tasks": []
+		},
+		{
+			"uuid": "ab741242-ca3d-48ec-8863-de913844fd7d",
+			"title": "Done",
+			"tasks": []
+		},
+		{
+			"uuid": "08337b9b-7628-43be-bca7-fcc6f34c92f0",
+			"title": "Ideas",
+			"tasks": [
+				"8d937200-a457-4ae3-bed8-2a0649ebe757"
+			]
+		},
+		{
+			"uuid": "03baf41e-0d1c-49d1-948b-63ad433f5644",
+			"title": "Postponed",
+			"tasks": [
+				"ae892693-7c4e-4334-a93b-176ce065e972"
+			]
+		}
+	],
+	"tasks": [
+		{
+			"uuid": "e73691e2-3b74-4d55-b6ef-7c5ae38a5d44",
+			"title": "Implement slide animation",
+			"description": "Work on implementing the slide animation. It can be problematic due to the change in the collisionshape to alow the player to go through tight spaces.\nAs reference this video mentions the AnimatedShape2D ADDON (1:04), that seems to do what we need:\nhttps://www.youtube.com/watch?v=USrgh3d8CUY&t=32s",
+			"category": "f37dee21-3d7a-4e3c-8e19-12d79112de9e",
+			"steps": []
+		},
+		{
+			"uuid": "d1d22c4d-93b9-4f24-864c-a3d062617f27",
+			"title": "Improve map layout",
+			"description": "Work needs to be done on the map layout so the player can reach every place of interest in the map",
+			"category": "68a60e15-e72d-4445-b5f4-302b7b5a1691",
+			"steps": []
+		},
+		{
+			"uuid": "e44e9a32-ba42-47a1-b589-f6edf0008dff",
+			"title": "Create movin platform",
+			"description": "A new animated platform is needed so the player can get to the slide animation. It can take the other moving platforms as example (Platform2 and Platform)",
+			"category": "f37dee21-3d7a-4e3c-8e19-12d79112de9e",
+			"steps": []
+		},
+		{
+			"uuid": "e1525fa8-d7cc-43b3-bf1f-f4db93907969",
+			"title": "Player stop on slopes",
+			"description": "The player shouldnt be allow to climb slopes unless he has the \"Run\" animation unlocked. \nThis could be done by changing the Max Angle property in the CharacterBody2D and make it smaller so it treats slopes as walls and changing it again by code when the player unlocks the \"Run\" animation",
+			"category": "f37dee21-3d7a-4e3c-8e19-12d79112de9e",
+			"steps": []
+		},
+		{
+			"uuid": "8d937200-a457-4ae3-bed8-2a0649ebe757",
+			"title": "Create magic creature in the begining",
+			"description": "",
+			"category": "f37dee21-3d7a-4e3c-8e19-12d79112de9e",
+			"steps": []
+		},
+		{
+			"uuid": "ae892693-7c4e-4334-a93b-176ce065e972",
+			"title": "Add hints at the start",
+			"description": "Add hints at the start of the game to guide the player in the correct direction.\nFor example: If the player tries to go left at the start we could tell him something like \"Indo tan despacion non creo que vaias moi lonxe, por que non provas a correr algo mais?\"",
+			"category": "f37dee21-3d7a-4e3c-8e19-12d79112de9e",
+			"steps": []
+		}
+	],
+	"layout": {
+		"columns": [
+			[
+				"ffab83f9-c379-49f9-8f63-a4690a2b0aaa"
+			],
+			[
+				"cfe0587e-b705-40cc-93ee-00f3c2b8ab8b",
+				"08337b9b-7628-43be-bca7-fcc6f34c92f0"
+			],
+			[
+				"ab741242-ca3d-48ec-8863-de913844fd7d",
+				"03baf41e-0d1c-49d1-948b-63ad433f5644"
+			]
+		]
+	}
+}
