@@ -69,7 +69,7 @@
 		},
 		{
 			"uuid": "e44e9a32-ba42-47a1-b589-f6edf0008dff",
-			"title": "Create movin platform",
+			"title": "Create moving platform",
 			"description": "A new animated platform is needed so the player can get to the slide animation. It can take the other moving platforms as example (Platform2 and Platform)",
 			"category": "f37dee21-3d7a-4e3c-8e19-12d79112de9e",
 			"steps": []
