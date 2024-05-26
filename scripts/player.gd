@@ -66,6 +66,7 @@ func enable_animation(animation_action:String) -> void:
 	match animation_action:
 		"run":
 			animations_array[1] = 1
+			floor_max_angle = 0.785398
 		"jump":
 			animations_array[2] = 1
 		"slide":
