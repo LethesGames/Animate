@@ -1,7 +1,38 @@
-[gd_scene load_steps=30 format=3 uid="uid://bd8n6glkhbnkn"]
+[gd_scene load_steps=37 format=3 uid="uid://bd8n6glkhbnkn"]
 
 [ext_resource type="Texture2D" uid="uid://hhs308lunpcu" path="res://assets/sprites/adventurer-v1.5-Sheet.png" id="1_inntb"]
 [ext_resource type="Script" path="res://scripts/player.gd" id="1_xg21u"]
+[ext_resource type="Script" path="res://addons/goutte.animated_shape_2d/animated_shape_2d.gd" id="2_qy8as"]
+[ext_resource type="Script" path="res://addons/goutte.animated_shape_2d/shape_frame_2d.gd" id="3_ioxk0"]
+[ext_resource type="Script" path="res://addons/goutte.animated_shape_2d/shape_frames_2d.gd" id="4_0bhii"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_hbqu3"]
+
+[sub_resource type="Resource" id="Resource_o1epf"]
+script = ExtResource("3_ioxk0")
+position = Vector2(-1, 2)
+disabled = false
+shape = SubResource("CapsuleShape2D_hbqu3")
+debug_color = Color(0, 0, 0, 1)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_uw6ij"]
+size = Vector2(22, 10)
+
+[sub_resource type="Resource" id="Resource_6l3dg"]
+script = ExtResource("3_ioxk0")
+position = Vector2(-1, 12)
+disabled = false
+shape = SubResource("RectangleShape2D_uw6ij")
+debug_color = Color(0, 0, 0, 1)
+
+[sub_resource type="Resource" id="Resource_00s5l"]
+script = ExtResource("4_0bhii")
+data = {
+"Idle": [SubResource("Resource_o1epf"), SubResource("Resource_o1epf"), SubResource("Resource_o1epf"), SubResource("Resource_o1epf")],
+"Jump": [SubResource("Resource_o1epf"), SubResource("Resource_o1epf"), SubResource("Resource_o1epf"), SubResource("Resource_o1epf"), SubResource("Resource_o1epf"), SubResource("Resource_o1epf"), SubResource("Resource_o1epf"), SubResource("Resource_o1epf"), SubResource("Resource_o1epf"), SubResource("Resource_o1epf")],
+"Run": [SubResource("Resource_o1epf"), SubResource("Resource_o1epf"), SubResource("Resource_o1epf"), SubResource("Resource_o1epf"), SubResource("Resource_o1epf"), SubResource("Resource_o1epf")],
+"Slide": [SubResource("Resource_6l3dg"), SubResource("Resource_6l3dg"), SubResource("Resource_6l3dg"), SubResource("Resource_6l3dg"), SubResource("Resource_6l3dg")]
+}
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_vwqp1"]
 atlas = ExtResource("1_inntb")
@@ -196,14 +227,10 @@ animations = [{
 "duration": 1.0,
 "texture": SubResource("AtlasTexture_olu4k")
 }],
-"loop": true,
+"loop": false,
 "name": &"Slide",
 "speed": 5.0
 }]
-
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_ypxk3"]
-radius = 8.0
-height = 26.0
 
 [node name="Player" type="CharacterBody2D"]
 z_index = 5
@@ -212,10 +239,14 @@ floor_snap_length = 3.0
 script = ExtResource("1_xg21u")
 JUMP_VELOCITY = -300.0
 
+[node name="AnimatedShape2D" type="Node" parent="." node_paths=PackedStringArray("animated_sprite", "collision_shape")]
+script = ExtResource("2_qy8as")
+animated_sprite = NodePath("../AnimatedSprite2D")
+collision_shape = NodePath("../CollisionShape2D")
+shape_frames = SubResource("Resource_00s5l")
+
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_wdny5")
-animation = &"Jump"
+animation = &"Idle"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(-1, 4)
-shape = SubResource("CapsuleShape2D_ypxk3")
