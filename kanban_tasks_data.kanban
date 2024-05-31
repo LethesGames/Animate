@@ -21,29 +21,31 @@
 			"uuid": "ffab83f9-c379-49f9-8f63-a4690a2b0aaa",
 			"title": "Todo",
 			"tasks": [
-				"d1d22c4d-93b9-4f24-864c-a3d062617f27"
+				"79b14c29-89dd-451c-94d8-9452c5bf9b72"
 			]
 		},
 		{
 			"uuid": "cfe0587e-b705-40cc-93ee-00f3c2b8ab8b",
 			"title": "Doing",
-			"tasks": [
-				"d77f0463-8be2-4cdf-8df8-3db4832b5320"
-			]
+			"tasks": []
 		},
 		{
 			"uuid": "ab741242-ca3d-48ec-8863-de913844fd7d",
 			"title": "Done",
 			"tasks": [
+				"d1d22c4d-93b9-4f24-864c-a3d062617f27",
 				"e1525fa8-d7cc-43b3-bf1f-f4db93907969",
 				"e44e9a32-ba42-47a1-b589-f6edf0008dff",
-				"e73691e2-3b74-4d55-b6ef-7c5ae38a5d44"
+				"e73691e2-3b74-4d55-b6ef-7c5ae38a5d44",
+				"d77f0463-8be2-4cdf-8df8-3db4832b5320"
 			]
 		},
 		{
 			"uuid": "08337b9b-7628-43be-bca7-fcc6f34c92f0",
 			"title": "Ideas",
 			"tasks": [
+				"c8aa0362-b179-46fa-b73e-d80128cb2f1f",
+				"8a035f64-9220-4f9d-92a4-c92bd5b99327",
 				"91a16261-3f10-4048-bfd8-5c1905305684",
 				"8d937200-a457-4ae3-bed8-2a0649ebe757"
 			]
@@ -111,6 +113,27 @@
 			"title": "Platform sizes",
 			"description": "Check if making the platforms a little bit longer help with the feeling. Right now the player moves so fast is easy to run over the edge of platforms",
 			"category": "68a60e15-e72d-4445-b5f4-302b7b5a1691",
+			"steps": []
+		},
+		{
+			"uuid": "79b14c29-89dd-451c-94d8-9452c5bf9b72",
+			"title": "Coin collection",
+			"description": "Implemet the avility to collect coins and update the coin counter of the hud",
+			"category": "f37dee21-3d7a-4e3c-8e19-12d79112de9e",
+			"steps": []
+		},
+		{
+			"uuid": "8a035f64-9220-4f9d-92a4-c92bd5b99327",
+			"title": "Player death",
+			"description": "When the playe is killed he should reaper at the sapwn pont\n",
+			"category": "f37dee21-3d7a-4e3c-8e19-12d79112de9e",
+			"steps": []
+		},
+		{
+			"uuid": "c8aa0362-b179-46fa-b73e-d80128cb2f1f",
+			"title": "Player healt",
+			"description": "Implement health system for the player it can be a heltbar or hearts counter",
+			"category": "f37dee21-3d7a-4e3c-8e19-12d79112de9e",
 			"steps": []
 		}
 	],
