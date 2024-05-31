@@ -10,7 +10,10 @@ extends CharacterBody2D
 var gravity = ProjectSettings.get_setting("physics/2d/default_gravity")
 
 @onready var animated_sprite : AnimatedSprite2D = get_node("AnimatedSprite2D")
-var animations_array = [1, 0, 0, 0] #Idle, Run, Jump, Slide
+var can_idle:bool = true
+var can_run:bool = false
+var can_jump:bool = false
+var can_slide:bool = false
 var has_jumped:bool = false
 var has_slide:bool = false
 	
@@ -26,7 +29,7 @@ func _physics_process(delta):
 	if (
 		Input.is_action_just_pressed("jump") 
 		and is_on_floor() 
-		and animations_array[2]
+		and can_jump
 	):
 		has_jumped = true
 		velocity.y = JUMP_VELOCITY
@@ -34,7 +37,7 @@ func _physics_process(delta):
 	if (
 		Input.is_action_just_pressed("slide") 
 		and is_on_floor() 
-		and animations_array[3]
+		and can_slide
 	):
 		has_slide = true
 
@@ -57,13 +60,13 @@ func handle_animations(direction, has_jumped) -> void:
 	elif direction < 0:
 		animated_sprite.flip_h = true
 		
-	if has_jumped and animations_array[2]: #Saltar
+	if has_jumped and can_jump: #Saltar
 		animated_sprite.play("Jump")
-	elif has_slide and animations_array[3]: #Slide
+	elif has_slide and can_slide: #Slide
 		animated_sprite.play("Slide")
 	elif (
 		(velocity.x > 0 or velocity.x < 0) 
-		and animations_array[1] 
+		and can_run 
 		and is_on_floor()
 	): #Correr
 		if (
@@ -83,9 +86,9 @@ func handle_animations(direction, has_jumped) -> void:
 func enable_animation(animation_action:String) -> void:
 	match animation_action:
 		"run":
-			animations_array[1] = 1
+			can_run = 1
 			floor_max_angle = 0.785398
 		"jump":
-			animations_array[2] = 1
+			can_jump = 1
 		"slide":
-			animations_array[3] = 1
+			can_slide = 1
