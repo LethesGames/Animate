@@ -18,3 +18,8 @@ func _on_animation_area_2d_body_entered(body, animation_action):
 	player.enable_animation(animation_action)
 	canvas_layer.show_animation(animation_action)
 	pass # Replace with function body.
+
+
+func _on_coin_area_entered():
+	canvas_layer.collect_coin()
+	pass # Replace with function body.

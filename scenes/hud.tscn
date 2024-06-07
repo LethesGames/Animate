@@ -208,7 +208,6 @@ layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_ub4pb")
 theme_override_font_sizes/font_size = 50
-text = "0/2"
 
 [node name="MarginContainer2" type="MarginContainer" parent="MarginContainer/HBoxContainer/HBoxContainer"]
 layout_mode = 2
@@ -220,9 +219,9 @@ theme_override_constants/margin_bottom = 20
 [node name="MenuButton" type="Button" parent="MarginContainer/HBoxContainer/HBoxContainer/MarginContainer2"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0, 0, 0, 1)
+theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_pressed_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_color = Color(0, 0, 0, 1)
-theme_override_colors/font_focus_color = Color(0, 0, 0, 1)
 theme_override_colors/font_hover_pressed_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_ub4pb")
 theme_override_font_sizes/font_size = 50
