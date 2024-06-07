@@ -20,7 +20,10 @@
 		{
 			"uuid": "ffab83f9-c379-49f9-8f63-a4690a2b0aaa",
 			"title": "Todo",
-			"tasks": []
+			"tasks": [
+				"40f1f00e-35f8-4e08-91b0-a07b8c53526e",
+				"78bfc936-7559-4c62-a180-362f9541074c"
+			]
 		},
 		{
 			"uuid": "cfe0587e-b705-40cc-93ee-00f3c2b8ab8b",
@@ -132,6 +135,20 @@
 			"uuid": "c8aa0362-b179-46fa-b73e-d80128cb2f1f",
 			"title": "Player healt",
 			"description": "Implement health system for the player it can be a heltbar or hearts counter",
+			"category": "f37dee21-3d7a-4e3c-8e19-12d79112de9e",
+			"steps": []
+		},
+		{
+			"uuid": "40f1f00e-35f8-4e08-91b0-a07b8c53526e",
+			"title": "Menu button",
+			"description": "Add functionality to the menu button. It should display 2 new butons that allow the player to quit or resume gaming",
+			"category": "f37dee21-3d7a-4e3c-8e19-12d79112de9e",
+			"steps": []
+		},
+		{
+			"uuid": "78bfc936-7559-4c62-a180-362f9541074c",
+			"title": "Ending",
+			"description": "Create something (door or portal) so the player can effectively beat the level",
 			"category": "f37dee21-3d7a-4e3c-8e19-12d79112de9e",
 			"steps": []
 		}
